@@ -12,4 +12,8 @@ export class SelecionarCarreiraComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  passouMouse() {
+    
+  }
+
 }

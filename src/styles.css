@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+/* Banner */
+
+.banner {
+    height: 500px !important;
+    background-color: red;
+}
+
+.banner-img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Carreira */
+
+.carreira {
+    display: flex;
+    gap: 5px;
+}
+
+.img-fluid {
+    width: 600px;
+    height: 300px !important;
+}
+
+.carreira-titulo {
+    margin-left: 475px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #171929;
+    display: flex;
+
+    justify-content: space-between;
+    height: 250px;
+}
+
+.footer-copyright {
+    background-color: #262222 !important;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    height: 100%;
+}
+
+.newsletter-input {
+    width: 250px;
+    margin: 10px;
+}
+
+.newsletter-btn {
+    width: 150px;
+}

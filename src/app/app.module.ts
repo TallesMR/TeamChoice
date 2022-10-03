@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
@@ -12,6 +13,9 @@ import { NoticiaComponent } from './noticia/noticia.component';
 import { SearchComponent } from './search/search.component';
 import { SelecionarCarreiraComponent } from './selecionar-carreira/selecionar-carreira.component';
 import { SliderComponent } from './slider/slider.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MainComponent } from './main/main.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +29,14 @@ import { SliderComponent } from './slider/slider.component';
     NoticiaComponent,
     SearchComponent,
     SliderComponent,
-    SelecionarCarreiraComponent
+    SelecionarCarreiraComponent,
+    MainComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
