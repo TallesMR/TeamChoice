@@ -3,7 +3,7 @@
 header {
     background-color: #171929 !important;
     display: flex !important;
-    height: 120px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -24,16 +24,21 @@ header {
     color: #F0A716;
 }
 
+.header-logo {
+    width: 100%;
+}
+
 
 /* Banner */
 
 .banner {
-    height: 800px !important;
+    height: 600px;
 }
 
 .banner-img {
     width: 100%;
-    height: 800px;
+    height: 600px;
+    opacity: 80%;
 }
 
 /* Search */
@@ -101,7 +106,7 @@ header {
 }
 
 .carreira-titulo {
-    color: #213285;
+    color: #213285 !important;
     font-size: 40px;
     text-align: center;
 }
@@ -113,12 +118,13 @@ header {
     background-color: #171929;
     display: flex;
 
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 1200px;
     height: 250px;
 }
 
-.footer-copyright {
-    background-color:  #213285!important;
+.footer-logo {
+    padding-top: 50px;
 }
 
 .newsletter {
@@ -138,4 +144,16 @@ header {
 
 .newsletter-btn {
     width: 150px;
+    background-color: #f0a40b;
+    border: none;
+}
+
+.newsletter-btn:hover {
+    background-color:#593602;
+}
+
+.footer-copyright {
+    background-color:  #0b0910;
+    padding: 20px 0px;
+    position: relative;
 }

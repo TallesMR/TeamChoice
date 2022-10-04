@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
+// NG PRIME FACES
+
+import {InputTextModule} from 'primeng/inputtext';
+
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
 import { FooterComponent } from './footer/footer/footer.component';
@@ -37,7 +41,9 @@ import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component'
   ],
   imports: [
     BrowserModule,
+
     HttpClientModule,
+    InputTextModule,
     AppRoutingModule
   ],
   providers: [],
