@@ -1,5 +1,5 @@
-Amarelo - #F0A716
+Amarelo 	- #F0A716  Para navegacao(Botoes texto HOVER)
 
-Azul 	  - #213285
+Azul 	- #213285 Para titulos e textos destacados
 
-Preto   - #171929
+Preto   	- #171929 Para header, footer entre outros
