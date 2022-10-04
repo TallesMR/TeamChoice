@@ -1,4 +1,24 @@
+/* Header */
 
+header {
+    background-color: #171929 !important;
+    display: flex !important;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacao {
+    width: 200px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-itens {
+    font-size: 18px;
+    display: inline;
+    color: #fff;
+}
 
 
 /* Banner */
