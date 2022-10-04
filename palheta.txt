@@ -1,5 +1,5 @@
 Amarelo - #F0A716
 
-Azul 	  - #495FE0
+Azul 	  - #213285
 
 Preto   - #171929

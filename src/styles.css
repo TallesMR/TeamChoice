@@ -20,6 +20,10 @@ header {
     color: #fff;
 }
 
+.nav-itens:hover {
+    color: #F0A716;
+}
+
 
 /* Banner */
 
@@ -69,7 +73,7 @@ header {
 }
 
 .carreira-titulo {
-    color: black;
+    color: #213285;
     font-size: 40px;
     text-align: center;
 }
