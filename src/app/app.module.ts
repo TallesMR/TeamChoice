@@ -16,6 +16,7 @@ import { SliderComponent } from './slider/slider.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
+import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     SliderComponent,
     SelecionarCarreiraComponent,
     MainComponent,
-    HomeComponent
+    HomeComponent,
+    FooterLogoComponent
   ],
   imports: [
     BrowserModule,
