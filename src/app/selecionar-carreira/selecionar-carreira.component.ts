@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,11 +10,13 @@ export class SelecionarCarreiraComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  Passou() {
+    console.log("passou");
   }
 
-  passouMouse() {
-    
+  ngOnInit(): void {
+
   }
+
 
 }

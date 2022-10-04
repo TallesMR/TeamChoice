@@ -20,13 +20,39 @@
     gap: 5px;
 }
 
+.card {
+    display: inline-block;
+    position: relative;
+}
+
+.card figcaption {
+    position: absolute;
+    top: 95px;
+    right: 320px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+  }
+
+.card:hover {
+    opacity: 80%;
+}
+
+
+#jogador {
+    top: 95px;
+    right: 10px;
+}
+
 .img-fluid {
     width: 600px;
     height: 300px !important;
 }
 
 .carreira-titulo {
-    margin-left: 475px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
 }
 
 
