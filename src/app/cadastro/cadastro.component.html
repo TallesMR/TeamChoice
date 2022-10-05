@@ -1,13 +1,29 @@
-<form>
- <div class="field formulario">
+<form class="formulario">
+    <h1 class="input-titulo">Area de Cadastro</h1>
+    <p>Preencha os campos para realizar seu cadastro</p>
     <div class="inputLabel">
-     <label for="username1" class="block formulario-label">Username</label>
-     <input id="username1" type="username" class="formulario-input" aria-describedby="username1-help"/>
+        <span class="p-float-label">
+            <input id="float-input" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">Nome:</label>
+        </span>
     </div>
     <div class="inputLabel">
-     <label for="username1" class="block formulario-label">Username</label>
-     <input id="username1" type="username" class="formulario-input" aria-describedby="username1-help"/>
+        <span class="p-float-label">
+            <input id="float-input" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">Senha:</label>
+        </span>
     </div>
-     <button pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded"></button>
- </div>
+    <div class="inputLabel">
+        <span class="p-float-label">
+            <input id="float-input" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">E-mail:</label>
+        </span>
+       </div>
+       <div class="inputLabel">
+        <span class="p-float-label">
+            <input id="float-input" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">Sla:</label>
+        </span>
+       </div>
+     <button pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn"></button>
 </form>
