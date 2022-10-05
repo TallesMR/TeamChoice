@@ -56,9 +56,11 @@ header {
     padding: 100px;
 }
 
-.search-input {
-    width: 500px;
-    display: inline;
+.search-input{
+    width: 500px !important;
+    height: 50px;
+    padding-left: 220px !important;
+    border-radius: 10px;
 }
 
 .fa-search {
