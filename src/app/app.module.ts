@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { AccordionModule } from 'primeng/accordion';    
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';       
 
 // NG PRIME FACES
 
@@ -41,9 +43,10 @@ import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component'
   ],
   imports: [
     BrowserModule,
-
     HttpClientModule,
     InputTextModule,
+    FontAwesomeModule,
+    AccordionModule,
     AppRoutingModule
   ],
   providers: [],
