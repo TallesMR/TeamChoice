@@ -27,6 +27,8 @@ import { HomeComponent } from './home/home.component';
 import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
+import { MenuLateralComponent } from './dashboard/menu-lateral/menu-lateral.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     FooterLogoComponent,
     CadastroComponent,
-    LoginComponent
+    LoginComponent,
+    MenuLateralComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
