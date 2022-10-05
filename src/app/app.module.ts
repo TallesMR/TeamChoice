@@ -6,7 +6,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // NG PRIME FACES
 
-import {InputTextModule} from 'primeng/inputtext';
+import { InputTextModule } from 'primeng/inputtext';
+import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 
 import { AppComponent } from './app.component';
@@ -53,6 +54,7 @@ import { LoginComponent } from './login/login.component';
     FontAwesomeModule,
     AccordionModule,
     ButtonModule,
+    PasswordModule,
     AppRoutingModule
   ],
   providers: [],
