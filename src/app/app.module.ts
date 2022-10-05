@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // NG PRIME FACES
 
 import {InputTextModule} from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
@@ -23,6 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
 import { HomeComponent } from './home/home.component';
 import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component'
     SelecionarCarreiraComponent,
     MainComponent,
     HomeComponent,
-    FooterLogoComponent
+    FooterLogoComponent,
+    CadastroComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,7 @@ import { FooterLogoComponent } from './footer/footer-logo/footer-logo.component'
     InputTextModule,
     FontAwesomeModule,
     AccordionModule,
+    ButtonModule,
     AppRoutingModule
   ],
   providers: [],
