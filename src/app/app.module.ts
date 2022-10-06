@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
+import { ChartModule } from 'primeng/chart';
 
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
@@ -29,6 +30,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { MenuLateralComponent } from './dashboard/menu-lateral/menu-lateral.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +51,14 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
     CadastroComponent,
     LoginComponent,
     MenuLateralComponent,
-    DashboardComponent
+    DashboardComponent,
+    DashboardHomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     InputTextModule,
+    ChartModule,
     FontAwesomeModule,
     AccordionModule,
     ButtonModule,

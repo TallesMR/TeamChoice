@@ -1167,17 +1167,6 @@
      top: 0px !important;
 }
 /*------------------------------------------------------------------ Instagram Feed -------------------------------------------------------------------*/
- .instagram-box{
-     padding: 70px 0px;
-     background: url(../images/ins-bg.jpg) no-repeat center center;
-     background-size: auto auto;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -ms-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     position: relative;
-}
  .instagram-box::before{
      background: rgba(0,0,0,0.9);
      width: 100%;
@@ -1267,222 +1256,7 @@
      bottom: 0;
      opacity: 1;
 }
-/*------------------------------------------------------------------ Footer Main -------------------------------------------------------------------*/
- .footer-main{
-     padding: 70px 0px;
-     background: #010101;
-}
-.footer-main hr{
-	border-top: 1px solid rgba(255,255,255,.6);
-}
-.footer-top-box{
-	margin-bottom: 30px;
-}
-.footer-top-box h3{
-	color: #ffffff;
-	position: relative;
-	font-size: 20px;
-}
-.footer-top-box h3::before {
-    border-bottom: 2px solid #b0b435;
-    content: "";
-    height: 3px;
-    width: 50%;
-    position: absolute;
-    bottom: 3px;
-    left: 0px;
-}
-.list-time{
-	margin-top: 15px;
-}
-.footer-top-box .list-time li{
-	color: #ffffff;
-	font-size: 16px;
-	display: block;
-	float: none;
-}
 
-.newsletter-box{
-	margin-top: 15px;
-	position: relative;
-}
-.newsletter-box input{
-	height: 40px;
-	border: none;
-	padding: 0 10px;
-	background: transparent;
-	border-radius: 0;
-	background: #fff;
-	padding: 0 20px;
-	width: 100%;
-}
-.newsletter-box i{
-	position: absolute;
-	right: 15px;
-	top: 10px;
-	font-size: 20px;
-}
-.newsletter-box button{	
-	color: #ffffff;
-	font-size: 16px;
-	font-weight: 500;
-	
-}
- .footer-top-box p{
-	 padding-bottom: 15px;
-	 color: #cccccc;
- }
-
- .footer-top-box ul{
-     display: inline-block;
-}
- .footer-top-box ul li {
-     float: left;
-     margin-right: 5px;
-}
- .footer-top-box ul li a {
-     color: #ffffff;
-     display: inline-block;
-     width: 36px;
-     height: 36px;
-     border: 2px solid #ffffff;
-     text-align: center;
-     line-height: 32px;
-}
- .footer-top-box ul li a:hover {
-     color: #b0b435;
-     border-color: #b0b435;
-}
-.footer-widget, .footer-link, .footer-link-contact{
-	margin-top: 15px;
-}
- .footer-widget h4 {
-     color: #ffffff;
-     font-size: 16px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     margin-bottom: 20px;
-     position: relative;
-     font-weight: 700;
-}
- .footer-widget h4::before {
-     border-bottom: 3px solid #b0b435;
-     content: "";
-     height: 3px;
-     width: 100%;
-     position: absolute;
-     bottom: 3px;
-     left: 0px;
-}
- .footer-widget p {
-     color: #cccccc;
-     font-weight: 400;
-     font-size: 14px;
-     padding-bottom: 20px;
-}
-
- .footer-link{
-}
- .footer-link h4{
-     color: #ffffff;
-     font-size: 16px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     margin-bottom: 20px;
-     position: relative;
-     font-weight: 700;
-}
- .footer-link h4::before {
-     border-bottom: 3px solid #b0b435;
-     content: "";
-     height: 3px;
-     width: 100%;
-     position: absolute;
-     bottom: 3px;
-     left: 0px;
-}
- .footer-link ul li {
-     margin-right: 5px;
-}
- .footer-link ul li a {
-     color: #ffffff;
-     text-align: left;
-     display: block;
-     line-height: 32px;
-     position: relative;
-     padding-left: 15px;
-     transition: all .3s ease-in-out;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-}
- .footer-link ul li a::before {
-     font-family: FontAwesome;
-     content: "\f105";
-     position: absolute;
-     left: 5px;
-     line-height: 35px;
-     font-size: 16px;
-     transition: all .3s ease-in-out;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-}
- .footer-link ul li a:hover::before {
-     left: 5px;
-}
- .footer-link ul li a:hover {
-     color: #b0b435;
-     border-color: #b0b435;
-     padding-left: 20px;
-}
- .footer-link-contact h4{
-     color: #ffffff;
-     font-size: 16px;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     margin-bottom: 20px;
-     position: relative;
-     font-weight: 700;
-}
- .footer-link-contact h4::before {
-     border-bottom: 3px solid #b0b435;
-     content: "";
-     height: 3px;
-     width: 100%;
-     position: absolute;
-     bottom: 3px;
-     left: 0px;
-}
- .footer-link-contact ul li{
-     margin-bottom: 12px;
-}
- .footer-link-contact ul li i{
-     position: absolute;
-     left: 0;
-     top: 5px;
-     padding-right: 6px;
-}
- .footer-link-contact ul li p{
-     padding-left: 25px;
-     color: #cccccc;
-     position: relative;
-}
- .footer-link-contact ul li p{
-     font-size: 16px;
-     color: #cccccc;
-     font-weight: 300;
-     padding-right: 16px;
-     line-height: 24px;
-}
- .footer-link-contact ul li p a{
-     color: #cccccc;
-}
- .footer-link-contact ul li p a:hover{
-     color: #b0b435;
-}
 /*------------------------------------------------------------------ Copyright -------------------------------------------------------------------*/
 
  .footer-copyright p {
@@ -1497,18 +1271,6 @@
      color: #b0b435;
 }
 /*------------------------------------------------------------------ All Pages -------------------------------------------------------------------*/
- .all-title-box{
-     background: url("../images/all-bg-title.jpg") no-repeat center center;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -ms-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     text-align: center;
-     background-attachment: fixed;
-     padding: 70px 0px;
-     position: relative;
-}
  .all-title-box::before{
      background: rgba(0,0,0,0.6);
      content: "";
@@ -2361,11 +2123,7 @@
  .contact-box-main{
      padding: 70px 0px;
 }
- .contact-info-left{
-     padding: 20px;
-     background: url(../images/contact-bg.jpg) no-repeat center;
-	 background-size: cover;
-}
+
  .contact-info-left h2{
      font-size: 22px;
      font-weight: 700;
