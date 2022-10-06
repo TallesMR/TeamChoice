@@ -10,6 +10,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 import { ChartModule } from 'primeng/chart';
+import { CarouselModule } from 'primeng/carousel';
 
 import { AppComponent } from './app.component';
 import { CopyrightComponent } from './footer/copyright/copyright.component';
@@ -59,6 +60,7 @@ import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-hom
     HttpClientModule,
     InputTextModule,
     ChartModule,
+    CarouselModule,
     FontAwesomeModule,
     AccordionModule,
     ButtonModule,
