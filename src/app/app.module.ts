@@ -32,6 +32,10 @@ import { LoginComponent } from './login/login.component';
 import { MenuLateralComponent } from './dashboard/menu-lateral/menu-lateral.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
+import { CriarTimeComponent } from './criar-time/criar-time.component';
+import { PesquisaJogadorComponent } from './dashboard/pesquisa-jogador/pesquisa-jogador.component';
+import { HistoricoComponent } from './dashboard/historico/historico.component';
+import { EstatistaComponent } from './dashboard/estatista/estatista.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,11 @@ import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-hom
     LoginComponent,
     MenuLateralComponent,
     DashboardComponent,
-    DashboardHomeComponent
+    DashboardHomeComponent,
+    CriarTimeComponent,
+    PesquisaJogadorComponent,
+    HistoricoComponent,
+    EstatistaComponent
   ],
   imports: [
     BrowserModule,
