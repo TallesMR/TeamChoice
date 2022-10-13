@@ -16,15 +16,14 @@ const routes: Routes = [
   { path: 'home'        , component:HomeComponent},
   { path: 'cadastro'    , component:CadastroComponent},
   { path: 'login'       , component:LoginComponent},
-  { path: 'noticias'    , NoticiaComponent}
+  { path: 'noticias'    , component:NoticiaComponent},
 
   { path:'dashboard'              , component:DashboardComponent , children:[ 
     { path: ''                    , component:DashboardHomeComponent},
-    { path: 'criar-time'          , CriarTimeComponent},
-    { path: 'estatistica'         , EstatistaComponent},
-    { path: 'historico'           , HistoricoComponent},
-    { path: 'pesquisa-jogador'    , PesquisaJogadorComponent}
-
+    { path: 'criar-time'          , component:CriarTimeComponent},
+    { path: 'estatistica'         , component:EstatistaComponent},
+    { path: 'historico'           , component:HistoricoComponent},
+    { path: 'pesquisa-jogador'    , component:PesquisaJogadorComponent}
   ]},
 ]
 
