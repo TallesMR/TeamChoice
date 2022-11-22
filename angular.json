@@ -45,6 +45,7 @@
               "src/assets/css/superslides.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "src/assets/js/baguetteBox.min.js",
               "src/assets/js/bootsnav.js",
               "src/assets/js/bootstrap-select.js",

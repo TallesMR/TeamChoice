@@ -2,7 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AccordionModule } from 'primeng/accordion';    
+import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';       
+
+// JQuery
+
+import * as $ from 'jquery';
 
 // NG PRIME FACES
 
@@ -36,6 +41,7 @@ import { CriarTimeComponent } from './dashboard/criar-time/criar-time.component'
 import { PesquisaJogadorComponent } from './dashboard/pesquisa-jogador/pesquisa-jogador.component';
 import { HistoricoComponent } from './dashboard/historico/historico.component';
 import { EstatistaComponent } from './dashboard/estatista/estatista.component';
+import { Validacampos } from './classes/validacampos';
 
 @NgModule({
   declarations: [
@@ -69,13 +75,16 @@ import { EstatistaComponent } from './dashboard/estatista/estatista.component';
     InputTextModule,
     ChartModule,
     CarouselModule,
+    FormsModule,
     FontAwesomeModule,
     AccordionModule,
     ButtonModule,
     PasswordModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    Validacampos
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
