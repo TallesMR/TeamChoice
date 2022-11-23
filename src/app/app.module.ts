@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AccordionModule } from 'primeng/accordion';    
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';       
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // JQuery
 
@@ -77,6 +78,7 @@ import { Validacampos } from './classes/validacampos';
     CarouselModule,
     FormsModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
     AccordionModule,
     ButtonModule,
     PasswordModule,

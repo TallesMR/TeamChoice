@@ -21,19 +21,13 @@ export class CadastroComponent implements OnInit {
   }
 
   // Chama o service de validacao de campos
-  validaCampos(){
-    console.log(this.nome);
-    this.Validacampos.validacampos([this.nome,this.senha,this.email]);
-    let nomeCampo = this.Validacampos.nomecampo;
-    let id:any = $('#' + this.Validacampos.nomecampo);
-    id.style.border = '1px solid red';
-    console.log("=>" + nomeCampo);
+  testaCampos(){
+    let campos = new Array;
+    campos[0] = '#cad_nome';
+    campos[1] = '#cad_senha';
+    campos[2] = '#cad_senhaconfirmacao';
+    campos[3] = '#cad_email';
+    this.Validacampos.testaVazio(campos);  
   }
-
-}
-
-
-function $(selector:string):any{
-  return document.querySelector(selector);
 
 }
