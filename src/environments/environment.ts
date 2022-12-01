@@ -5,6 +5,11 @@
 export const environment = {
   production: false
 };
+export const miles = {
+  api : 'http://localhost/teamchoice.com.br/miles/'
+}
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

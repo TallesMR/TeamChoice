@@ -206,6 +206,17 @@ header {
     font-size: 38px;
 }
 
+.termos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.url_termo {
+    font-size: 16px;
+    color: #f0a40b;
+}
+
 .form-btn {
     width: 150px;
     height: 50px;

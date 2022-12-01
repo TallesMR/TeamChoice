@@ -3,31 +3,32 @@
     <p>Preencha os campos para realizar seu cadastro</p>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_nome" name="nome" class="formulario-input" type="text" pInputText> 
+            <input id="cad_nome" [(ngModel)]="this.nome" name="nome" class="formulario-input" type="text" pInputText> 
             <label for="float-input">Nome:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_senha" name="senha" class="formulario-input" type="text" pInputText> 
+            <input id="cad_senha" (click)="trocaInput('#cad_senha')" [(ngModel)]="this.senha" name="senha" class="formulario-input" type="text" pInputText> 
             <label for="float-input">Senha:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_senhaconfirmacao" name="senhaconfirmacao" class="formulario-input" type="text" pInputText> 
+            <input id="cad_senhaconfirmacao" (click)="trocaInput('#cad_senhaconfirmacao')" [(ngModel)]="this.confirmasenha" name="senhaconfirmacao" class="formulario-input" type="text" pInputText> 
             <label for="float-input">Confirme sua senha:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_email" name="cad_email" class="formulario-input" type="text" pInputText> 
+            <input id="cad_email" [(ngModel)]="this.email" name="cad_email" class="formulario-input" type="text" pInputText> 
             <label for="float-input">E-mail:</label>
         </span>
        </div>
-       <div class="inputLabel">    
-            <input type="checkbox">
-            <p>li e aceitos o <a href="#">termos de uso</a> e <a href="#">Politica de privacidade</a></p>
+       <div class="termos">    
+            <input style="margin-top: 2px;" type="checkbox">
+            <p style="height: 100%;">li e aceitos o <a class="url_termo"href="#">termos de uso</a> e <a class="url_termo" href="#">politica de privacidade</a></p>
        </div>
-     <button (click)="testaCampos()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn">a</button>
+     <button (click)="testaCampos()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn"></button>
+     <p-toast></p-toast>
 </form>

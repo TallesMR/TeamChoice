@@ -12,10 +12,13 @@ import * as $ from 'jquery';
 
 // NG PRIME FACES
 
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule }from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
+import { ButtonModule }   from 'primeng/button';
+import { MessageService } from 'primeng/api';
+import { ChartModule }    from 'primeng/chart';
+import { ToastModule }    from 'primeng/toast';
+import { MessagesModule } from 'primeng/messages';
 import { CarouselModule } from 'primeng/carousel';
 
 import { AppComponent } from './app.component';
@@ -78,14 +81,17 @@ import { Validacampos } from './classes/validacampos';
     CarouselModule,
     FormsModule,
     FontAwesomeModule,
+    ToastModule,
     BrowserAnimationsModule,
     AccordionModule,
     ButtonModule,
+    MessagesModule,
     PasswordModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
-    Validacampos
+    Validacampos,
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
