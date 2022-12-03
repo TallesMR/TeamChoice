@@ -9,7 +9,8 @@ import { Validacampos } from '../classes/validacampos';
 export class CadastroComponent implements OnInit {
 
   public nome  = "";
-  public senha = "";
+  public senha1 = "";
+  public senha2 = "";
   public email = "";
   public termo = false;
 
@@ -21,19 +22,20 @@ export class CadastroComponent implements OnInit {
   }
 
   // Chama o service de validacao de campos
-  validaCampos(){
-    console.log(this.nome);
-    this.Validacampos.validacampos([this.nome,this.senha,this.email]);
-    let nomeCampo = this.Validacampos.nomecampo;
-    let id:any = $('#' + this.Validacampos.nomecampo);
-    id.style.border = '1px solid red';
-    console.log("=>" + nomeCampo);
+  acessar(){
+  var campos = new Array<string>;  
+  campos[0] = 'cad_nome';
+  campos[1] = 'cad_senha';
+  campos[2] = 'cad_email';
+  campos[3] = 'cad_senha2';
+  this.Validacampos.testaVazio(campos);
   }
+  
 
 }
 
 
-function $(selector:string):any{
-  return document.querySelector(selector);
+// function $(selector:string):any{
+//   return document.querySelector(selector);
 
-}
+// }

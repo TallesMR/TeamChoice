@@ -3,14 +3,20 @@
     <p>Preencha os campos para realizar seu cadastro</p>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_nome" name="nome" type="text" [(ngModel)]="this.nome" class="formulario-input teste" type="text" pInputText> 
+            <input id="cad_nome" name="nome" type="text" [(ngModel)]="this.nome" class="formulario-input" type="text" pInputText> 
             <label for="float-input">Nome:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <p-password [toggleMask]="true" name="senha" id="cad_senha" [(ngModel)]="this.senha" class="formulario-input"></p-password>
+            <p-password [toggleMask]="true" name="senha1" id="cad_senha1" [(ngModel)]="this.senha1" class="formulario-input"></p-password>
             <label for="float-input">Senha:</label>
+        </span>
+    </div>
+    <div class="inputLabel">
+        <span class="p-float-label">
+            <p-password [toggleMask]="true" name="senha2" id="cad_senha2" [(ngModel)]="this.senha2" class="formulario-input"></p-password>
+            <label for="float-input">Confirme sua senha senha:</label>
         </span>
     </div>
     <div class="inputLabel">
@@ -23,5 +29,5 @@
             <input type="checkbox">
             <p>li e aceitos o <a href="#">termos de uso</a> e <a href="#">Politica de privacidade</a></p>
        </div>
-     <button (click)="validaCampos()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn">a</button>
+     <button (click)="acessar()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn">a</button>
 </form>
