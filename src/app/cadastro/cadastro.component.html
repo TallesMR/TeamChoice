@@ -9,13 +9,13 @@
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_senha" (click)="trocaInput('#cad_senha')" [(ngModel)]="this.senha" name="senha" class="formulario-input" type="text" pInputText> 
+            <input id="cad_senha" type="password" [(ngModel)]="this.senha" name="senha" class="formulario-input" pInputText> 
             <label for="float-input">Senha:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="cad_senhaconfirmacao" (click)="trocaInput('#cad_senhaconfirmacao')" [(ngModel)]="this.confirmasenha" name="senhaconfirmacao" class="formulario-input" type="text" pInputText> 
+            <input id="cad_senhaconfirmacao" type="password" [(ngModel)]="this.confirmasenha" name="senhaconfirmacao" class="formulario-input" pInputText> 
             <label for="float-input">Confirme sua senha:</label>
         </span>
     </div>
@@ -27,7 +27,7 @@
        </div>
        <div class="termos">    
             <input style="margin-top: 2px;" type="checkbox">
-            <p style="height: 100%;">li e aceitos o <a class="url_termo"href="#">termos de uso</a> e <a class="url_termo" href="#">politica de privacidade</a></p>
+            <p style="height: 100%;">li e aceito os <a class="url_termo"href="#">termos de uso e politica de privacidade</a></p>
        </div>
      <button (click)="testaCampos()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn"></button>
      <p-toast></p-toast>

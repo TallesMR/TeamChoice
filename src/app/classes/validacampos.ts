@@ -32,7 +32,6 @@ export class Validacampos {
       if (this.senhas.length >= 2) {
         this.comparaSenha();  
       }          
-
     }
 
     comparaSenha(){
@@ -53,7 +52,7 @@ export class Validacampos {
 
     valido(){
       this.severity = 'success'
-      this.msg = 'Sucesso';
+      this.msg      = 'Sucesso';
       this.is_valid = true;
     }
 }

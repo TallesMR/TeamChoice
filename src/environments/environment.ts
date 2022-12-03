@@ -1,6 +1,7 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+import { LocalstorageService } from 'src/app/services/localstorage.service';
 
 export const environment = {
   production: false
@@ -9,6 +10,7 @@ export const miles = {
   api : 'http://localhost/teamchoice.com.br/miles/'
 }
 
+export const ls = new LocalstorageService();
 
 
 /*
