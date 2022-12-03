@@ -10,16 +10,18 @@ import { CriarTimeComponent } from './dashboard/criar-time/criar-time.component'
 import { EstatistaComponent } from './dashboard/estatista/estatista.component';
 import { HistoricoComponent } from './dashboard/historico/historico.component';
 import { PesquisaJogadorComponent } from './dashboard/pesquisa-jogador/pesquisa-jogador.component';
+import { SelecionarCarreiraComponent } from './selecionar-carreira/selecionar-carreira.component';
 
 const routes: Routes = [
   { path: ''            , component:HomeComponent},
   { path: 'home'        , component:HomeComponent},
-  { path: 'cadastro'    , component:CadastroComponent},
+  { path: 'cadastro'    , component:SelecionarCarreiraComponent},
   { path: 'login'       , component:LoginComponent},
   { path: 'noticias'    , component:NoticiaComponent},
 
   { path:'dashboard'              , component:DashboardComponent , children:[ 
     { path: ''                    , component:DashboardHomeComponent},
+    { path: 'home'                , component:DashboardHomeComponent},
     { path: 'criar-time'          , component:CriarTimeComponent},
     { path: 'estatistica'         , component:EstatistaComponent},
     { path: 'historico'           , component:HistoricoComponent},
@@ -33,4 +35,6 @@ const routes: Routes = [
     exports: [ RouterModule ],
     imports: [ RouterModule.forRoot(routes) ]
   })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+
+}

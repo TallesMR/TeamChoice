@@ -3,15 +3,15 @@
     <p>Prencha os campos para entrar em sua conta</p>
     <div class="inputLabel">
         <span class="p-float-label">
-            <input id="float-input" class="formulario-input" type="text" pInputText> 
-            <label for="float-input">Username:</label>
+            <input id="float-input" [(ngModel)]="this.login" name="login" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">E-mail:</label>
         </span>
     </div>
     <div class="inputLabel">
         <span class="p-float-label">
-            <p-password [toggleMask]="true" class="formulario-input"></p-password>
+            <p-password [toggleMask]="true" [(ngModel)]="this.senha" name="senha" class="formulario-input"></p-password>
             <label for="float-input">Senha:</label>
         </span>
     </div>
-     <button pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn"></button>
+     <button pButton pRipple type="button" label="Cadastrar" (click)="testaLogin()" class="p-button-outlined p-button-rounded form-btn"></button>
 </form>

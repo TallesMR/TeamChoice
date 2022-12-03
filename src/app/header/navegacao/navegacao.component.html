@@ -1,7 +1,12 @@
-<div>
-    <ul class="navegacao">
-        <li class="nav-itens"><a class="nav-itens" routerLink="cadastro">Cadastrar-se</a></li>
-        <li class="nav-itens"><a class="nav-itens" routerLink="login">Entrar</a></li>
-        <li class="nav-itens"><a class="nav-itens" routerLink="navegacao">Noticias</a></li>
+<article class="navegacao">    
+    <ul *ngIf="is_logado == false">
+        <li class="nav-itens"><a routerLink="home">Home</a></li>
+        <li class="nav-itens"><a routerLink="cadastro">Cadastrar-se</a></li>
+        <li class="nav-itens"><a routerLink="login">Entrar</a></li>
+        <li class="nav-itens"><a routerLink="noticias">Noticias</a></li>
     </ul>
-</div>
+    <ul *ngIf="is_logado == true">
+        <li class="nav-itens"><a routerLink="">{{this.nome}}</a></li>
+        <li class="nav-itens"><a (click)="sair()">Logout</a></li>
+    </ul>
+</article>

@@ -2,17 +2,29 @@
 
 header {
     background-color: #171929 !important;
-    display: flex !important;
-    width: 100%;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .navegacao {
-    width: 80vw;
     display: flex;
-    gap: 30px;
+    justify-content: flex-end;    
+    align-items: center;
+    height: 100%;
+}
+
+.navegacao li a {
+    color: #fff;
+    margin: 5px;
+    margin-right: 4vw;
+    font-size: 25px;
+}
+
+.navegacao a:hover{
+    color: #F0A716;
+}
+
+.logo-header img {
+    object-fit: cover;
+    max-width: 30%;
 }
 
 .nav-itens {
@@ -25,19 +37,10 @@ header {
     color: #F0A716;
 }
 
-.header-logo {
-    width: 140px;
-}
-
 
 /* Banner */
 
-.banner {
-    height: 600px;
-}
-
-.banner-img {
-    height: 400px;
+.banner img {
     width: 100%;
     opacity: 80%;
 }
@@ -116,7 +119,6 @@ header {
 }
 
 .noticia {
-    padding: 50px;
     width: 100%;
     background: #f5f5f5;
 }
@@ -126,14 +128,16 @@ header {
 
 .footer {
     background-color: #171929;
-    display: flex;
-    justify-content: space-around;
-    gap: 1200px;
-    height: 250px;
+    padding: 50px;
 }
 
-.footer-logo {
-    padding-top: 50px;
+.footer-left img {
+    margin-left: 15vw;
+    width: 15vw;
+}
+
+.footer-left p {
+    text-align: center;
 }
 
 .newsletter {
@@ -142,22 +146,26 @@ header {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 300px;
     height: 100%;
 }
 
-.newsletter-input {
+.newsletter h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.newsletter input {
     width: 250px;
     margin: 10px;
 }
 
-.newsletter-btn {
+.newsletter button {
     width: 150px;
     background-color: #f0a40b;
     border: none;
 }
 
-.newsletter-btn:hover {
+.newsletter button:hover {
     background-color:#593602;
 }
 
@@ -172,8 +180,7 @@ header {
 .formulario {
     margin: 0 auto;
     width: 50%;
-    padding: 50px;
-    height: 550formulariopx;
+    height: 550px;
     display: flex;
     gap: 25px;
     flex-direction: column;
@@ -205,6 +212,17 @@ header {
     font-size: 38px;
 }
 
+.termos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.url_termo {
+    font-size: 16px;
+    color: #f0a40b;
+}
+
 .form-btn {
     width: 150px;
     height: 50px;
@@ -222,47 +240,34 @@ header {
     flex-direction: column;
 }
 
+.p-toast-message-content .p-toast-detail{
+    margin: 0px !important;
+}
+
 /* Menu Lateral */
-
-.dashboard {
-    display: flex;
-    margin: 60px;
-    height: 500px;
-  }
   
-
-.menu-lateral {
-    width: 250px ;
-  }
-  
-  .menu-lateral-item {
-    display: flex;
-    height:120px;
-    padding-top: 70px;
+   .lista-dashboard li {
+    margin-bottom: 10px;
     text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  
+    padding: 5px;
+    height: 60px;
+   }
+
   .menu-lateral-item:hover {
     color: #F0A716;
   }
 
   .lateral-icon {
-    padding-top: 25px;
-    font-size: 50px;
+    font-size: 30px;
   }
   
   
   .link-lateral {
     color:  black;
-    padding: 10px;
   }
   
   .link-lateral:hover {
     color: #0056b3;
-    padding: 10px;
   }
   
   a:hover {
@@ -286,7 +291,6 @@ header {
     background-color: #f5f5f5;
     height: 500px;
     width: 1500px;
-    padding: 20px;
 }
 
 section h1 {

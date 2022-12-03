@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Validacampos } from '../classes/validacampos';
+import { LogadoService } from '../services/logado.service';
+import { MessageService } from 'primeng/api';
+import { query } from '@angular/animations';
 
 @Component({
   selector: 'app-cadastro',
@@ -9,33 +12,33 @@ import { Validacampos } from '../classes/validacampos';
 export class CadastroComponent implements OnInit {
 
   public nome  = "";
-  public senha1 = "";
-  public senha2 = "";
+  public senha = "";
+  public confirmasenha = "";
   public email = "";
   public termo = false;
 
   constructor(
-    public Validacampos:Validacampos
+    public Validacampos:Validacampos,
+    private messageService: MessageService,
+    public logadoService:LogadoService
   ) { }
 
   ngOnInit(): void {
   }
 
   // Chama o service de validacao de campos
-  acessar(){
-  var campos = new Array<string>;  
-  campos[0] = 'cad_nome';
-  campos[1] = 'cad_senha';
-  campos[2] = 'cad_email';
-  campos[3] = 'cad_senha2';
-  this.Validacampos.testaVazio(campos);
+  testaCampos(){
+    this.Validacampos.testaVazio(['#cad_nome','#cad_senha','#cad_senhaconfirmacao','#cad_email']);
+    this.messageService.add({severity:this.Validacampos.severity,  detail: this.Validacampos.msg});
+    if (this.Validacampos.is_valid) {
+      this.logadoService.enviar(this.nome,this.email,this.senha);
+    } 
   }
   
 
+  trocaInput(id: string){
+    console.log('mudou display ' + id);
+    let input = document.querySelector(id);
+  }
+
 }
-
-
-// function $(selector:string):any{
-//   return document.querySelector(selector);
-
-// }

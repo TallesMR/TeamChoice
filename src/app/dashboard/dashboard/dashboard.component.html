@@ -1,4 +1,10 @@
-<div class="dashboard">
-  <app-menu-lateral></app-menu-lateral>
-  <router-outlet></router-outlet>
+<div class="container">
+<article class="row">
+  <aside class="menu-lateral col-md-1">
+    <app-menu-lateral></app-menu-lateral>
+  </aside>
+  <main class="col-md-11">
+    <router-outlet></router-outlet>
+  </main>
+</article>
 </div>
