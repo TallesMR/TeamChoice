@@ -1,4 +1,4 @@
-import { Component, ModuleWithProviders, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
@@ -15,7 +15,7 @@ import { SelecionarCarreiraComponent } from './selecionar-carreira/selecionar-ca
 const routes: Routes = [
   { path: ''            , component:HomeComponent},
   { path: 'home'        , component:HomeComponent},
-  { path: 'cadastro'    , component:SelecionarCarreiraComponent},
+  { path:'cadastro'         , component:CadastroComponent},
   { path: 'login'       , component:LoginComponent},
   { path: 'noticias'    , component:NoticiaComponent},
 

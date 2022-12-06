@@ -3,11 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { ls, miles } from 'src/environments/environment';
 import { Validacampos } from '../classes/validacampos';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogadoService {
+
+  public is_logado:Subject<boolean> = new Subject<boolean>();
 
   constructor(
     public http: HttpClient,
@@ -15,17 +18,21 @@ export class LogadoService {
     public router:Router
   ) { }
 
-  enviar(nome: string,email: string,senha: string){
+  enviar(nome: string,email: string,senha: string,idade:number,sexo: string,cep: number, posicao: string){
     return this.http.get(miles.api, { params:{
       controller: "cadastro", 
       op: "salvar",
       nome:   nome,
       email:  email,
       senha:  senha,
+      idade:  idade,
+      sexo:   sexo,
+      cep:    cep,
+      posicao:posicao 
     },
     }).subscribe(
       (res: any) => {
-        if (res.status = 'success') {
+        if (res.status = 1) {
           this.setaLogin(res);  
         }else{
           this.validaCampos.msg       = res.msg;
@@ -34,10 +41,21 @@ export class LogadoService {
       });
   }
 
+  testaLogado(){
+    let usuario = ls.get("is_logado") == 'true' ? true : false;
+    if (usuario) {
+      this.is_logado.next(true);
+      this.router.navigate(['/','dashboard']);
+    }else{
+      this.is_logado.next(false);
+    }
+  }
+
   setaLogin(response: any){
      ls.set('is_logado','true');
      ls.set('id',response.id);
      ls.set('username',response.username);
+     this.testaLogado();
   }
 
   userExists(login:string, senha:string){
@@ -55,6 +73,7 @@ export class LogadoService {
   }
 
   desloga(){
+    this.is_logado.next(false);
     ls.clear();
     ls.set('is_logado','false');
   }

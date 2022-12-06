@@ -102,11 +102,6 @@ header {
 }
 
 
-#jogador {
-    top: 95px;
-    right: 10px;
-}
-
 .img-fluid {
     width: 600px;
     height: 300px !important;
@@ -178,14 +173,12 @@ header {
 /* Cadastro */
 
 .formulario {
-    margin: 0 auto;
-    width: 50%;
-    height: 550px;
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.formulario input {
+    margin: 5px;
 }
 
 .formulario-label {
@@ -216,6 +209,7 @@ header {
     display: flex;
     gap: 5px;
     align-items: center;
+    justify-content: center;
 }
 
 .url_termo {

@@ -1,34 +1,61 @@
-<form class="formulario">
+<app-selecionar-carreira></app-selecionar-carreira>
+<form class="container formulario">
     <h1 class="input-titulo">Área de Cadastro</h1>
     <p>Preencha os campos para realizar seu cadastro</p>
-    <div class="inputLabel">
+    <div class="inputLabel row">
         <span class="p-float-label">
             <input id="cad_nome" [(ngModel)]="this.nome" name="nome" class="formulario-input" type="text" pInputText> 
             <label for="float-input">Nome:</label>
         </span>
     </div>
-    <div class="inputLabel">
+    <div class="inputLabel row">
         <span class="p-float-label">
             <input id="cad_senha" type="password" [(ngModel)]="this.senha" name="senha" class="formulario-input" pInputText> 
             <label for="float-input">Senha:</label>
         </span>
     </div>
-    <div class="inputLabel">
+    <div class="inputLabel row">
         <span class="p-float-label">
             <input id="cad_senhaconfirmacao" type="password" [(ngModel)]="this.confirmasenha" name="senhaconfirmacao" class="formulario-input" pInputText> 
             <label for="float-input">Confirme sua senha:</label>
         </span>
     </div>
-    <div class="inputLabel">
+    <div class="inputLabel row">
         <span class="p-float-label">
             <input id="cad_email" [(ngModel)]="this.email" name="cad_email" class="formulario-input" type="text" pInputText> 
             <label for="float-input">E-mail:</label>
         </span>
-       </div>
-       <div class="termos">    
-            <input style="margin-top: 2px;" type="checkbox">
-            <p style="height: 100%;">li e aceito os <a class="url_termo"href="#">termos de uso e politica de privacidade</a></p>
-       </div>
+    </div>
+    <div class="inputLabel row">
+        <span class="p-float-label">
+            <input id="cad_idade" name="idade" [(ngModel)]="this.idade" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">Idade:</label>
+        </span>
+    </div>
+    <div class="inputLabel row">
+        <span class="p-float-label">
+            <input id="cad_endereco" name="endereco" [(ngModel)]="this.cep" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">CEP:</label>
+        </span>
+    </div>
+    <div class="inputLabel row">
+        <span class="p-float-label">
+            <input id="cad_sexo" name="sexo" [(ngModel)]="this.sexo" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">Sexo:</label>
+        </span>
+    </div>
+
+    <div *ngIf="this.is_jogador" class="inputLabel row">
+        <span class="p-float-label">
+            <input id="cad_posicao" name="posicao" [(ngModel)]="this.posicao" class="formulario-input" type="text" pInputText> 
+            <label for="float-input">posicao:</label>
+        </span>
+    </div>
+
+    <div class="termos">    
+        <input style="margin-top: 2px;" type="checkbox">
+        <p style="height: 100%;">li e aceito os <a class="url_termo"href="#">termos de uso e politica de privacidade</a></p>
+    </div>
      <button (click)="testaCampos()" pButton pRipple type="button" label="Cadastrar" class="p-button-outlined p-button-rounded form-btn"></button>
      <p-toast></p-toast>
 </form>

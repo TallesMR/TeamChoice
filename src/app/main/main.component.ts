@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core'; 
-import { ls } from 'src/environments/environment';
 import { LogadoService } from '../services/logado.service';
-import { Subject } from 'rxjs';
+
 
 
 @Component({
@@ -10,8 +9,6 @@ import { Subject } from 'rxjs';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  public is_logado:Subject<boolean> = new Subject<boolean>();
 
   constructor(
     public logadoService: LogadoService
@@ -22,10 +19,7 @@ export class MainComponent implements OnInit {
   }
 
   testaUsuario(){
-    let usuario = ls.get("is_logado") == 'true' ? true : false;
-    if (usuario) {
-      
-    }
+    this.logadoService.testaLogado();
   }
 
 }

@@ -1,19 +1,22 @@
-<div class="box-add-products">
+<div class="container">
+<div class="box-add-products" style="background-color: #fff; margin: 20px; padding: 0px;">
     <div class="container">
         <h1 class="carreira-titulo title-all">Selecionar Carreira</h1>
         <div class="carreira">
-            <div class="card">
-                <div class="offer-box-products card-jogador">
+            <div class="card" (click)="selecionarCarreira('jogador')">
+                <div id="jogador" class="offer-box-products card-jogador">
                     <img class="img-fluid" src="assets/images/jogador.jpeg" alt="" />
-                    <figcaption id="jogador">Virar Jogador</figcaption>
+                    <figcaption>Virar Jogador</figcaption>
                 </div>
             </div>
-            <div class="card">
-                <div class="offer-box-products">
+            <div class="card" (click)="selecionarCarreira('treinador')">
+                <div id="treinador" class="offer-box-products">
                     <img class="img-fluid" src="assets/images/treinador.png" alt="" />
                     <figcaption>Virar Treinador</figcaption>
                 </div>
             </div>
         </div>
     </div>
+<router-outlet></router-outlet>
 </div>
+

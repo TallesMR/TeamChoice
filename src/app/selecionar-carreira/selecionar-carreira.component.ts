@@ -1,5 +1,6 @@
-import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TestaCarreiraService } from '../services/testa-carreira.service';
 
 @Component({
   selector: 'app-selecionar-carreira',
@@ -8,15 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelecionarCarreiraComponent implements OnInit {
 
-  constructor() { }
+  public is_jogador = false;
 
-  Passou() {
-    console.log("passou");
-  }
+  constructor(
+    public router: Router,
+    public testaCarreira: TestaCarreiraService
+  ) { }
 
   ngOnInit(): void {
-
   }
 
-
+  selecionarCarreira(carreira_selecionada: string) {  
+    this.testaCarreira.emiteSelecao(true,carreira_selecionada);
+    if (carreira_selecionada == 'jogador') {
+      $("#" + carreira_selecionada).css("opacity", "40%");
+      $("#treinador").css("opacity", "100%");
+    }else{
+      $("#" + carreira_selecionada).css("opacity", "40%");
+      $("#jogador").css("opacity", "100%");
+    };
+  }
 }

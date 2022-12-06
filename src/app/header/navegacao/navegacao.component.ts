@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LogadoService } from 'src/app/services/logado.service';
 import { ls } from 'src/environments/environment';
 
@@ -10,22 +11,28 @@ import { ls } from 'src/environments/environment';
 export class NavegacaoComponent implements OnInit {
 
   public nome = "";
-  public is_logado:boolean = false;
+  public is_login:boolean = false;
 
   constructor(
-    public logadoService: LogadoService
-  ) { }
+    public logadoService: LogadoService,
+    public router: Router
+  ) { 
+    this.logadoService.is_logado
+    .subscribe(
+      (_isheader:boolean) => {
+        this.is_login = _isheader;
+       }
+    );
+  }
 
   ngOnInit(): void {
-    this.nome       = ls.get('username');
-    console.log(JSON.parse(ls.get('is_logado')));
-    this.is_logado  = JSON.parse(ls.get('is_logado')); 
-    console.log(this.is_logado);
+
   }
 
   // Chama serviço para deslogar user
   sair(){
     this.logadoService.desloga();
+    this.router.navigate(["/",'home']);
   }
 
 }
