@@ -16,9 +16,9 @@ export class CadastroComponent implements OnInit {
   public confirmasenha = "";
   public email = "";
   public is_jogador = false;
-  public idade    = 0;
+  public idade    = '';
   public sexo     = '';
-  public cep      = 0;
+  public cep      = '';
   public posicao  = '';
 
   constructor(

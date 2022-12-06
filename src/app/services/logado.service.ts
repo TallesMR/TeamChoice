@@ -18,7 +18,7 @@ export class LogadoService {
     public router:Router
   ) { }
 
-  enviar(nome: string,email: string,senha: string,idade:number,sexo: string,cep: number, posicao: string){
+  enviar(nome: string,email: string,senha: string,idade:string,sexo: string,cep: string, posicao: string){
     return this.http.get(miles.api, { params:{
       controller: "cadastro", 
       op: "salvar",

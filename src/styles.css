@@ -177,8 +177,8 @@ header {
     margin: 5px;
 }
 
-.formulario input {
-    margin: 5px;
+.formulario span {
+    margin: 12px;
 }
 
 .formulario-label {
