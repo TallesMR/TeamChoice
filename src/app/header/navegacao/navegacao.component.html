@@ -6,7 +6,7 @@
         <li class="nav-itens"><a routerLink="noticias">Noticias</a></li>
     </ul>
     <ul *ngIf="is_login">
-        <li class="nav-itens"><a routerLink="">{{this.nome}}</a></li>
+        <li class="nav-itens"><a routerLink="#">{{nome}}</a></li>
         <li class="nav-itens"><a (click)="sair()">Logout</a></li>
     </ul>
 </article>

@@ -10,7 +10,7 @@ import { ls } from 'src/environments/environment';
 })
 export class NavegacaoComponent implements OnInit {
 
-  public nome = "";
+  public nome = ls.get('username');
   public is_login:boolean = false;
 
   constructor(

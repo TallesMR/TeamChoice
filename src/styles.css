@@ -235,7 +235,7 @@ header {
 }
 
 .p-toast-message-content .p-toast-detail{
-    margin: 0px !important;
+    margin: 10px !important;
 }
 
 /* Menu Lateral */
@@ -312,6 +312,10 @@ section h1 {
 
 .home-image {
     width: 60%;
+}
+
+.home-image:hover{
+    opacity: 50%;
 }
 
 .home-grafico{

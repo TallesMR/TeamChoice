@@ -4,21 +4,27 @@ import { ls, miles } from 'src/environments/environment';
 import { Validacampos } from '../classes/validacampos';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
+import { MessageService } from 'primeng/api';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogadoService {
 
+  public carreira_user = ''
+
   public is_logado:Subject<boolean> = new Subject<boolean>();
 
   constructor(
     public http: HttpClient,
     public validaCampos: Validacampos,
-    public router:Router
+    public router:Router,
+    public messageService: MessageService
   ) { }
 
-  enviar(nome: string,email: string,senha: string,idade:string,sexo: string,cep: string, posicao: string){
+
+
+  enviar(nome: string,email: string,senha: string,idade:string,sexo: string,cep: string, posicao: string, carreira: string){
     return this.http.get(miles.api, { params:{
       controller: "cadastro", 
       op: "salvar",
@@ -28,15 +34,15 @@ export class LogadoService {
       idade:  idade,
       sexo:   sexo,
       cep:    cep,
-      posicao:posicao 
-    },
+      carreira: carreira,
+      posicao:posicao
+    },  
     }).subscribe(
       (res: any) => {
-        if (res.status = 1) {
-          this.setaLogin(res);  
+        if (res.status == '1') {
+          this.setaLogin(res);
         }else{
-          this.validaCampos.msg       = res.msg;
-          this.validaCampos.severity  = res.status;
+          this.messageService.add({severity:'error',  detail: 'E-mail já cadastrado no sistema'});
         }
       });
   }

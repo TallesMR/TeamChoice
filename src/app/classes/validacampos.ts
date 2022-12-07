@@ -18,7 +18,7 @@ export class Validacampos {
          if (valor.type == 'checkbox') {
           this.checkbox = valor.checked;
         }
-           if (dados == "" && valor.type != 'email' && !this.checkbox){
+           if (dados == "" && valor.type != 'email'){
            this.is_vazio = true;
            this.msg = "Preencha os campos para prosseguir"
            this.severity = 'warn';
@@ -27,9 +27,9 @@ export class Validacampos {
              valor.style.border = (this.reset_color);
            }, 4500)
           }else{
-                this.msg = "Por favor concorde com nossos termos para prosseguir em seu cadastro";
-                this.severity = 'info';
-
+            if (!this.checkbox && valor.type) {
+              this.testaCheckbox();
+            }
               if (this.senhas.length >= 2) {
                 this.comparaSenha();  
               }
@@ -41,6 +41,11 @@ export class Validacampos {
            }
        });
        }          
+
+       testaCheckbox(){
+        this.msg = "Por favor concorde com nossos termos para prosseguir em seu cadastro";
+        this.severity = 'info';
+       }
 
     comparaSenha(){
         let senha         = (this.senhas[0]);
@@ -57,8 +62,6 @@ export class Validacampos {
       }
 
     valido(){
-      this.severity = 'success'
-      this.msg      = 'Sucesso';
       this.is_valid = true;
     }
 }

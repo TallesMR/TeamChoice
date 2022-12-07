@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TestaCarreiraService } from '../services/testa-carreira.service';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-selecionar-carreira',

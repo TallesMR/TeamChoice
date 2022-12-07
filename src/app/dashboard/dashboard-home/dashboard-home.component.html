@@ -1,13 +1,15 @@
-<section class="home-dashboard">
-    <h1>Olá Talles, boa noite</h1>
+<section class="container-fluid">
+    <article class="row">
+    <h1 class="col-md-2">Olá {{nome}}, boa noite</h1>
         <div class="dashboard-home">
-            <div class="home-noticia">
+            <div class="home-noticia col-md-4">
                 <h1>Fique por dentro das noticias semanais</h1>   
                 <img class="home-image" src="assets/images/noticia1.jpg" alt="" />
                 <p-button label="Ver mais" styleClass="p-button-link"></p-button>
             </div>
-            <div class="home-chart">
-                <p-chart type="radar"  height="500px" width="300px" [data]="data" class="home-grafico"></p-chart>
+            <div class="home-chart col-md-8">
+                <p-chart type="radar"  height="500px" [data]="data" class="home-grafico"></p-chart>
             </div>
         </div>
+    </article>
 <section>
